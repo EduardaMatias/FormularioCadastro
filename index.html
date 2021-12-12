@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 id="titulo" class="text-center">Formulário de cadastro</h1>
+        <p id="subtitulo" class="text-center">Preencha todos os campos corretamente</p>
+    </header>
+
+    <form name="formcadastro" action="enviar.php" method="POST">
+        <div class="form-group">
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+            </div>
+
+            <div>
+                <label>Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required>
+            </div>
+
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            </div>
+
+            <div>
+                <label>Gênero:</label> 
+
+                <label>
+                    <input type="radio" name="gênero" value="Feminino" required> Feminino
+                </label> 
+
+                <label>
+                    <input type="radio" name="gênero" value="Masculino" required> Masculino
+                </label> 
+
+                <label>
+                    <input type="radio" name="gênero" value="Outro" required> Outro
+                </label> 
+
+                <label>
+                    <input type="radio" name="gênero" value="Prefiro não responder" required> Prefiro não responder
+                </label>
+
+            </div>
+
+            <div>
+                <label>Estado:</label>
+                <select id="estado" required>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito federal</option>
+                    <option value="ES">Espirito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+
+            <div>
+                <label>Idade:</label>
+                <input type="number" name="idade" id="idade" placeholder= "Selecione sua idade" required>
+            </div>
+            <input type="submit" value="Cadastrar">
+        </div>
+        
+    </form>
+    <br>
+    <br>
+</body>
+
+</html>
